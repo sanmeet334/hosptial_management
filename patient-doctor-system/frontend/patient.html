@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🏥 Patient Portal</h1>
+
+    <div class="card">
+        <h2>Patient Registration</h2>
+
+        <input type="text" id="name" placeholder="Patient Name">
+        <input type="number" id="age" placeholder="Age">
+        <input type="text" id="education" placeholder="Education">
+        <textarea id="symptoms" placeholder="Symptoms"></textarea>
+
+        <button onclick="registerPatient()">Register</button>
+
+        <div id="result"></div>
+    </div>
+
+    <div class="card">
+        <h2>Doctor Status</h2>
+        <p id="doctorStatus">Loading...</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

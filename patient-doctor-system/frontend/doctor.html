@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doctor Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>👨‍⚕️ Doctor Portal</h1>
+
+    <div class="card">
+        <h2>Doctor Details</h2>
+
+        <p><b>Name:</b> Dr. Aditya Patil</p>
+        <p><b>Age:</b> 45</p>
+        <p><b>Room:</b> 5</p>
+        <p><b>Hospital:</b> Ram Krishna Hospital</p>
+        <p><b>Qualification:</b> MBBS, MD</p>
+    </div>
+
+    <div class="card">
+        <h2>Doctor Status</h2>
+
+        <select id="status">
+            <option>Available</option>
+            <option>Coming in 5 minutes</option>
+            <option>Coming in 10 minutes</option>
+            <option>Emergency</option>
+            <option>Not available</option>
+        </select>
+
+        <button onclick="updateDoctorStatus()">Update Status</button>
+    </div>
+
+    <div class="card">
+        <h2>Waiting Patients</h2>
+
+        <p>
+            Total Waiting:
+            <b id="patientCount">0</b>
+        </p>
+
+        <div id="patients"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
